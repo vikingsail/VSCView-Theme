@@ -1,0 +1,480 @@
+{
+  "name": "Gyro",
+  "width": 995,
+  "height": 763,
+  "version": 1,
+  "children": [
+    {
+      "x": 0.0,
+      "y": 0.0,
+      "children": [
+        {
+          "type": "slider",
+          "x": 218.0,
+          "y": 29.0,
+          "width": 0.0,
+          "height": 0.0,
+          "center": true,
+          "inputY": "triggers:l:analog * 13",
+          "children": [
+            {
+              "type": "image",
+              "image": "SC_LeftTriggerSoftPull.png",
+              "x": 0.0,
+              "y": 112.0,
+              "width": 192.0,
+              "height": 47.0,
+              "center": true,
+              "winform.smoothing": "Default",
+              "winform.interpolation": "Low"
+            },
+            {
+              "type": "showhide",
+              "input": "triggers:l:stage2",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_LeftTrigger-FullPull-Active.png",
+                  "x": 0.0,
+                  "y": 100.0,
+                  "width": 122.0,
+                  "height": 34.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "slider",
+          "x": 777.0,
+          "y": 29.0,
+          "width": 0.0,
+          "height": 0.0,
+          "center": true,
+          "inputY": "triggers:r:analog * 13",
+          "children": [
+            {
+              "type": "image",
+              "image": "SC_RightTriggerSoftPull.png",
+              "x": 0.0,
+              "y": 112.0,
+              "width": 192.0,
+              "height": 47.0,
+              "center": true,
+              "winform.smoothing": "Default",
+              "winform.interpolation": "Low"
+            },
+            {
+              "type": "showhide",
+              "input": "triggers:r:stage2",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_RightTrigger-FullPull-Active.png",
+                  "x": 0.0,
+                  "y": 100.0,
+                  "width": 122.0,
+                  "height": 34.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "image": "SC_base.png",
+      "x": 497.0,
+      "y": 358.0,
+      "width": 966.0,
+      "height": 691.0,
+      "center": true,
+      "winform.smoothing": "Default",
+      "winform.interpolation": "High",
+      "children": [
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "children": [
+            {
+              "type": "showhide",
+              "input": "quad_right:s",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_Face_Button.png",
+                  "x": 116.0,
+                  "y": 200.0,
+                  "width": 55.0,
+                  "height": 45.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            },
+            {
+              "type": "showhide",
+              "input": "quad_right:e",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_Face_Button.png",
+                  "x": 175.0,
+                  "y": 160.0,
+                  "width": 55.0,
+                  "height": 45.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            },
+            {
+              "type": "showhide",
+              "input": "quad_right:w",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_Face_Button.png",
+                  "x": 65.0,
+                  "y": 160.0,
+                  "width": 55.0,
+                  "height": 45.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            },
+            {
+              "type": "showhide",
+              "input": "quad_right:n",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_Face_Button.png",
+                  "x": 125.0,
+                  "y": 118.0,
+                  "width": 55.0,
+                  "height": 45.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "children": [
+            {
+              "type": "showhide",
+              "input": "home",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_Guide_Button.png",
+                  "x": 0.0,
+                  "y": 27.0,
+                  "width": 90.0,
+                  "height": 80.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            },
+            {
+              "type": "showhide",
+              "input": "menu:r",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_Start-Select_Button.png",
+                  "x": 90.0,
+                  "y": 38.0,
+                  "width": 73.0,
+                  "height": 36.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            },
+            {
+              "type": "showhide",
+              "input": "menu:l",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_Start-Select_Button.png",
+                  "x": -90.0,
+                  "y": 38.0,
+                  "width": 73.0,
+                  "height": 36.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "children": [
+            {
+              "type": "showhide",
+              "input": "bumpers:l",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_LeftBumper-Active.png",
+                  "x": -286.0,
+                  "y": -188.0,
+                  "width": 265.0,
+                  "height": 35.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            },
+            {
+              "type": "showhide",
+              "input": "bumpers:r",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_RightBumper-Active.png",
+                  "x": 286.0,
+                  "y": -188.0,
+                  "width": 265.0,
+                  "height": 35.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "children": [
+            {
+              "type": "showhide",
+              "input": "grip:l",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_LeftGrip_Button.png",
+                  "x": -252.0,
+                  "y": 143.0,
+                  "width": 100.0,
+                  "height": 200.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            },
+            {
+              "type": "showhide",
+              "input": "grip:r",
+              "children": [
+                {
+                  "type": "image",
+                  "image": "SC_RightGrip_Button.png",
+                  "x": 252.0,
+                  "y": 143.0,
+                  "width": 100.0,
+                  "height": 200.0,
+                  "center": true,
+                  "winform.smoothing": "Default",
+                  "winform.interpolation": "Low"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "showhide",
+          "input": "stick_left:click",
+          "children": [
+            {
+              "type": "image",
+              "image": "SC_AnalogStick_Click.png",
+              "x": -112.0,
+              "y": 202.0,
+              "width": 114.0,
+              "height": 94.0,
+              "center": true,
+              "winform.smoothing": "Default",
+              "winform.interpolation": "Low"
+            }
+          ]
+        },
+        {
+          "type": "slider",
+          "x": -112.0,
+          "y": 202.0,
+          "inputX": "stick_left:x * 12",
+          "inputY": "stick_left:y * 12",
+          "children": [
+            {
+              "type": "image",
+              "image": "SC_AnalogStick.png",
+              "x": 0.0,
+              "y": 0.0,
+              "width": 118.0,
+              "height": 96.0,
+              "center": true,
+              "winform.smoothing": "Default",
+              "winform.interpolation": "Low"
+            }
+          ]
+        },
+        {
+          "type": "showhide",
+          "input": "touch_left:click",
+          "children": [
+            {
+              "type": "image",
+              "image": "SC_LeftTrackpad_Click.png",
+              "x": -300.0,
+              "y": 25.0,
+              "width": 275.0,
+              "height": 225.0,
+              "center": true,
+              "winform.smoothing": "Default",
+              "winform.interpolation": "Low"
+            }
+          ]
+        },
+        {
+          "x": -300.0,
+          "y": 25.0,
+          "children": [
+            {
+              "type": "trailpad",
+              "image": "padheat.png",
+              "x": 0.0,
+              "y": 0.0,
+              "width": 30.0,
+              "height": 30.0,
+              "input": "touch_left:0:touch",
+              "inputX": "touch_left:0:x * 132 + touch_left:0:y * 30",
+              "inputY": "touch_left:0:y * 100",
+              "length": 20,
+              "children": [
+                {
+                  "type": "showhide",
+                  "input": "touch_left:0:touch",
+                  "children": [
+                    {
+                      "type": "image",
+                      "image": "SC_Touchpad_Touch.png",
+                      "x": 0.0,
+                      "y": 0.0,
+                      "width": 50.0,
+                      "height": 50.0,
+                      "center": true,
+                      "winform.smoothing": "Default",
+                      "winform.interpolation": "Low"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "showhide",
+          "input": "touch_right:click",
+          "children": [
+            {
+              "type": "image",
+              "image": "SC_RightTrackpad_Click.png",
+              "x": 300.0,
+              "y": 25.0,
+              "width": 275.0,
+              "height": 225.0,
+              "center": true,
+              "winform.smoothing": "Default",
+              "winform.interpolation": "Low"
+            }
+          ]
+        },
+        {
+          "x": 310.0,
+          "y": 25.0,
+          "children": [
+            {
+              "type": "trailpad",
+              "image": "padheat.png",
+              "x": 0.0,
+              "y": 0.0,
+              "width": 30.0,
+              "height": 30.0,
+              "input": "touch_right:0:touch",
+              "inputX": "touch_right:0:x * 132 - touch_right:0:y * 20",
+              "inputY": "touch_right:0:y * 100",
+              "length": 20,
+              "children": [
+                {
+                  "type": "showhide",
+                  "input": "touch_right:0:touch",
+                  "children": [
+                    {
+                      "type": "image",
+                      "image": "SC_Touchpad_Touch.png",
+                      "x": 0.0,
+                      "y": 0.0,
+                      "width": 50.0,
+                      "height": 50.0,
+                      "center": true,
+                      "winform.smoothing": "Default",
+                      "winform.interpolation": "Low"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "x": 0.0,
+          "y": 0.0,
+          "children": [
+            {
+              "type": "basic3d1",
+              "image": "SC_Gyro-Accel.png",
+              "x": 0.0,
+              "y": 310.0,
+              "width": 171.0,
+              "height": 120.0,
+              "mode": "gyro",
+              "shadowl": "gyro_left.png",
+              "shadowr": "gyro_right.png",
+              "shadowu": "gyro_up.png",
+              "shadowd": "gyro_down.png"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
